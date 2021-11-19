@@ -15,14 +15,19 @@
 }
 
 
-/*header*/
 
+/*Общий контейнер*/
 
 .container-all {
     max-width: 1280px;
     max-height: 2128px;
     margin: 0 auto;
 }
+
+
+/*header*/
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -105,11 +110,79 @@
     display: inline-block;
 }
 
+/*burger*/
+.mobi-header {
+    display: none;
+    padding: 15px 19px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 500;
+}
+.burger {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background-color: #82B5D1;
+}
+.burger:after, .burger:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #82B5D1;
+    border-radius: 40px;
+}
+.burger:before {
+    bottom: 5px;
+}
+.burger:after {
+    top: 5px;
+}
+.mobi-header_nav-element {
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 34px;
+    color: #82B5D1;
+    font-weight: 300;
+    margin: 0;
+}
+.mobi-header_nav-element-hite {
+
+}
+.mobi-header_nav-icons {
+
+}
+.mobi-header_nav-element-1 {
+
+}
+.mobi-header_nav-search {
+    list-style: none;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    color: #82B5D1;
+    font-size: 24px;
+}
+.mobi-header_nav-cart {
+    list-style: none;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #82B5D1;
+    font-size: 24px;
+}
+
 /*main*/
 
 .product-foto {
     position: relative;
     z-index: 1;
+}
+.product-foto img {
+    max-width: 100%;
 }
 .fa-star {
     color: #FFC144;
@@ -131,10 +204,12 @@
 .product-foto-small-1 {
     display: flex;
     padding-bottom: 15px;
+    flex-wrap: wrap;
 }
 .product-foto-small-2 {
     display: flex;
     padding-top: 15px;
+    flex-wrap: wrap;
 }
 .product-foto-small-3 {
     padding-right: 30px;
@@ -159,6 +234,8 @@
     display: flex;
     border-bottom: 2px solid #9BC4DA;
     padding-bottom: 21px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .product-name {
     font-family: 'Poiret One', cursive;
@@ -253,9 +330,10 @@
 }
 .best-groods_products {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .product-1 {
-    padding-right: 31px;
 }
 .product:last-child {
     padding-right: 0;
@@ -322,7 +400,6 @@
     padding: 0;
 }
 .footer_nav-menu {
-    padding-left: 121px;
 }
 .footer_nav-menu-1 {
     color: #82B5D1;
@@ -334,8 +411,7 @@
     color: #82B5D1;
     font-family: "Open Sans Condenced Light",sans-serif;
     font-size: 24px;
-    position: relative;
-    left: 146px;
+
 }
 .footer_nav-extra-menu-1 {
     margin: 0 0 43px 0;
@@ -389,9 +465,19 @@
     justify-content: space-between;
     padding-top: 95px;
 }
-.footer-form {
-    position: relative;
-    left: 245px;
+.footer-form form{
+    flex-direction: column;
+    display: flex;
+}
+.extra-menu-form {
+    display: inline;
+}
+.footer-copy-2 {
+    display: none;
+    color: #82B5D1;
+    font-family: "Open Sans Condenced Light", sans-serif;
+    font-size: 18px;
+    margin: 0;
 }
 
 /*footer:hover*/
@@ -411,4 +497,92 @@
 .footer_nav-extra-menu-1:hover {
     color: darkred;
     cursor: pointer;
+}
+
+
+/*Медиа-Запросы*/
+
+@media screen and (max-width: 1217px) { .best-groods_style {
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 921px) {
+    .best-groods_products {
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 1307px) {
+    .product-foto-small-1 {
+        padding: 0;
+    }
+    .product-foto-small-2 {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    .header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .product-foto-small {
+        display: none;
+    }
+}
+@media screen and (max-width: 668px) {
+    .product-button {
+        width: 278px;
+    }
+    .product-btn {
+        padding: 0;
+    }
+    .product-name-price-btn {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .description {
+        max-width: 278px;
+        font-size: 14px;
+        line-height: 19px;
+        padding-top: 30px;
+    }
+    .product-price {
+        padding: 6px 0 8px 0;
+    }
+    .product-name {
+        padding-top: 10px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-form {
+        max-width: 282px;
+    }
+    .footer-copy {
+        display: none;
+    }
+    .footer-copy-2 {
+        display: block;
+        padding-top: 40px;
+    }
+    .footer-hite-text {
+        max-width: 278px;
+    }
+    .footer-hite_icons img {
+        padding-right: 23px;
+    }
+    .best-groods_title {
+        padding: 40px 0 30px 0;
+    }
+    .mobi-header {
+        display: flex;
+    }
+    .product {
+        margin-top: 50px;
+    }
 }
