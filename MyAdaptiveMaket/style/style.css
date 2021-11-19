@@ -1,0 +1,414 @@
+@font-face {
+    font-family: "Open Sans Condenced Bold";
+    font-weight: 700;
+    src: url("../fonts/OpenSansCondensed-Bold.ttf");
+}
+@font-face {
+    font-family: "Open Sans Condenced Light";
+    font-weight: 300;
+    src: url("../fonts/OpenSansCondensed-Light.ttf");
+}
+@font-face {
+    font-family: "Poiret One";
+    font-weight: 400;
+    src: url("../fonts/PoiretOne-Regular.ttf");
+}
+
+
+/*header*/
+
+
+.container-all {
+    max-width: 1280px;
+    max-height: 2128px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 -12px 0;
+}
+.header_nav-element-1 {
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 34px;
+    color: #82B5D1;
+    font-weight: 300;
+    margin: 0;
+    padding: 30px 0 56px 0;
+}
+.header_nav-element-2 {;
+    display: flex;
+    list-style: none;
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 24px;
+    color: #82B5D1;
+    font-weight: 300;
+    line-height: 34px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 35px 0 60px 120px;
+}
+.header_nav-element-2\.1 {
+    display: inline-block;
+    padding: 0 17px;
+}
+.header_nav-element-2\.1:hover {
+    color: darkred;
+    cursor: pointer;
+}
+.header_nav-element-3 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.header_nav-heart {
+    display: inline-block;
+    width: 21px;
+    height: 19px;
+    color: #82B5D1;
+    font-size: 24px;
+    padding: 0 0 60px 0;
+    margin: 34px 0 0 0;
+}
+.header_nav-search {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    color: #82B5D1;
+    padding: 0 28px 60px 26px;
+    font-size: 24px;
+    margin: 34px 0 0 0;
+}
+.header_nav-cart {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #82B5D1;
+    font-size: 24px;
+    padding: 0 0 60px 0;
+    margin: 34px 0 0 0;
+}
+.header_nav-heart:hover {
+    color: darkred;
+    cursor: pointer;
+}
+.header_nav-search:hover {
+    color: darkred;
+    cursor: pointer;
+}
+.header_nav-cart:hover {
+    color: darkred;
+    cursor: pointer;
+}
+.header_nav {
+    display: inline-block;
+}
+
+/*main*/
+
+.product-foto {
+    position: relative;
+    z-index: 1;
+}
+.fa-star {
+    color: #FFC144;
+    width: 24px;
+}
+.product-star {
+    position: absolute;
+    top: 22px;
+    right: 19px;
+    z-index: 2;
+    font-size: 21px;
+    cursor: pointer;
+}
+.product-foto-small {
+    display: inline-block;
+    max-width: 640px;
+    padding-top: 41px;
+}
+.product-foto-small-1 {
+    display: flex;
+    padding-bottom: 15px;
+}
+.product-foto-small-2 {
+    display: flex;
+    padding-top: 15px;
+}
+.product-foto-small-3 {
+    padding-right: 30px;
+}
+.product-foto-small-4 {
+    padding-right: 30px;
+}
+.product-btn {
+    display: flex;
+    padding-left: 187px;
+}
+.product_name-price {
+ }
+.product-name-price-btn {
+    display: flex;
+    padding-top: 44px;
+}
+.product-description {
+    padding-left: 19px;
+}
+.product-foto-dectription {
+    display: flex;
+    border-bottom: 2px solid #9BC4DA;
+    padding-bottom: 21px;
+}
+.product-name {
+    font-family: 'Poiret One', cursive;
+    font-size: 33px;
+    margin: 0;
+    display: inline-block;
+    color: #344854;
+}
+.product-price {
+    font-family: "Open Sans Condenced-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0;
+    padding: 15px 0 24px;
+    color: #344854;
+}
+.container-decription {
+    max-width: 514px;
+    margin: 0;
+    display: inline-block;
+}
+.description {
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 19px;
+    line-height: 27px;
+    margin: 0;
+    color: #4E6D7D;
+}
+.product-button {
+    width: 225px;
+    height: 58px;
+    background-color: #82B5D1;
+    border-color: #82B5D1;
+    box-shadow: 0 0 0 #82B5D1;
+}
+.product-button:hover {
+    background-color: darkred;
+    border-color: darkred;
+    cursor: pointer;
+}
+.text-btn {
+    font-family: "Open Sans Condenced Light", sans-serif;
+    font-size: 28px;
+    margin: 0;
+    color: white;
+}
+.product-link {
+    padding-top: 23px;
+}
+.product-delivery {
+    color: #82B5D1;
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 19px;
+}
+.product-agreement {
+    color: #82B5D1;
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 19px;
+    padding-left: 24px;
+}
+.product-characteristics {
+    text-align: center;
+}
+.descr {
+    max-width: 514px;
+    margin: 0 auto;
+    font-family: "Open Sans Condenced Light", sans-serif;
+    color: #4E6D7D;
+    font-size: 18px;
+}
+.characteristics {
+    font-family: "Open Sans Condenced Light", sans-serif;
+    color: #4E6D7D;
+    font-size: 28px;
+    padding-right: 26px;
+}
+.reviews {
+    font-family: "Open Sans Condenced Light",sans-serif;
+    color: #9BC4DA;
+    font-size: 28px;
+    padding-left: 31px;
+}
+.reviews:hover {
+    color: #4E6D7D;
+    cursor: pointer;
+}
+.characteristics-reviews {
+    padding-top: 30px;
+}
+.descr-block {
+    padding-top: 29px;
+}
+.best-groods_products {
+    display: flex;
+}
+.product-1 {
+    padding-right: 31px;
+}
+.product:last-child {
+    padding-right: 0;
+}
+.best-groods_style {
+    font-family: 'Poiret One', cursive;
+    font-size: 34px;
+    color: #344854;
+    margin: 0;
+}
+.best-groods_title {
+    text-align: right;
+    margin: 0;
+    padding: 100px 0 40px 0;
+}
+.product-1_title {
+    font-family: 'Poiret One', cursive;
+    font-size: 28px;
+    color: #344854;
+    margin: 0;
+    padding-top: 9px;
+}
+.product-1_price {
+    font-family: 'Poiret One', cursive;
+    font-size: 28px;
+    color: #6891A7;
+    margin: 0;
+    padding-top: 7px;
+}
+
+/*footer*/
+
+.footer-hite_title {
+    font-family: "Open Sans Condenced Light", sans-serif;
+    color: #82B5D1;
+    font-size: 34px;
+    margin: 0;
+}
+.footer-hite-text {
+    max-width: 349px;
+    color: #82B5D1;
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 40px 0 19px
+}
+.footer-hite_icons img {
+    padding-right: 29px;
+    cursor: pointer;
+}
+.footer-hite_icons img:last-child {
+    padding-right: 0;
+}
+.footer-copy {
+    color: #82B5D1;
+    font-family: "Open Sans Condenced Light", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding-top: 35px;
+}
+.footer_nav-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer_nav-menu {
+    padding-left: 121px;
+}
+.footer_nav-menu-1 {
+    color: #82B5D1;
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 24px;
+    margin: 0 0 42px 0;
+}
+.footer_nav-extra-menu {
+    color: #82B5D1;
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 24px;
+    position: relative;
+    left: 146px;
+}
+.footer_nav-extra-menu-1 {
+    margin: 0 0 43px 0;
+}
+.footer_nav-menu-list-title {
+    color: #82B5D1;
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 24px;
+    padding-bottom: 14px;
+}
+.footer_nav-extra-menu-list-1 {
+    color: #82B5D1;
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 24px;
+}
+.footer_nav-extra-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer_nav-extra-menu-list-title {
+    color: #82B5D1;
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 24px;
+    padding-bottom: 14px;
+}
+.subscribe-btn {
+    color: #E6F0F6;
+    background-color: #1A242A;
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 18px;
+    padding: 10px 110px;
+    margin-top: 11px;
+    border: 1px solid #1A242A;
+}
+.subscribe {
+    max-width: 298px;
+    color: #82B5D1;
+    font-family: "Open Sans Condenced Light",sans-serif;
+    font-size: 24px;
+    margin: 0 0 23px 0;
+}
+.form-e-mail {
+    padding: 15px 106px 15px 13px;
+    color: #82B5D1;
+    background-color: #CDE1ED;
+    border: 1px solid #82B5D1;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 95px;
+}
+.footer-form {
+    position: relative;
+    left: 245px;
+}
+
+/*footer:hover*/
+
+.footer_nav-menu-1:hover {
+    color: darkred;
+    cursor: pointer;
+}
+.footer_nav-menu-list-title:hover {
+    color: darkred;
+    cursor: pointer;
+}
+.footer_nav-extra-menu-list-title:hover {
+    color: darkred;
+    cursor: pointer;
+}
+.footer_nav-extra-menu-1:hover {
+    color: darkred;
+    cursor: pointer;
+}
