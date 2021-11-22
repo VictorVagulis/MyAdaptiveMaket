@@ -149,9 +149,10 @@
     color: #82B5D1;
     font-weight: 300;
     margin: 0;
+    padding-left: 40px;
 }
 
-.menu-list {
+.mobi-menu-list {
     background: #fff;
     position: fixed;
     left: 0;
@@ -160,7 +161,7 @@
     height: 0;
     z-index: 501;
 }
-.menu-list ul {
+.mobi-menu-list ul {
     flex-direction: column;
     align-items: center;
     column-gap: 40px;
@@ -169,10 +170,10 @@
     display: none;
 
 }
-.burger:hover .menu-list {
+.burger:hover .mobi-menu-list {
     height: 100vh;
 }
-.burger:hover .menu-list ul {
+.burger:hover .mobi-menu-list ul {
     display: flex;
 }
 /*.mobi-header_nav-element-hite {
@@ -181,9 +182,9 @@
 .mobi-header_nav-icons {
 
 }*/
-/*.mobi-header_nav-element-1 {*/
-
-/*}*/
+.mobi-header_nav-element-1 {
+    padding: 0;
+}
 .mobi-header_nav-search {
     list-style: none;
     display: inline-block;
@@ -199,6 +200,43 @@
     height: 24px;
     color: #82B5D1;
     font-size: 24px;
+    padding-left: 12px;
+}
+.mobi-menu-column {
+    padding: 0;
+    margin: 0 auto;
+}
+.mobi-menu-list-title {
+    font-family: "Open Sans Condenced Light", sans-serif;
+    color: #82B5D1;
+    font-size: 30px;
+}
+.mobi-menu-list-title-1 {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Open Sans Condenced Light", sans-serif;
+    color: #82B5D1;
+    font-size: 30px;
+}
+
+
+/*burger-hover*/
+
+.mobi-menu-list-title:hover {
+    color: darkred;
+    cursor: pointer;
+}
+.mobi-menu-list-title-1:hover {
+     color: darkred;
+     cursor: pointer;
+}
+mobi-header_nav-search:hover {
+    color: darkred;
+    cursor: pointer;
+}
+.mobi-header_nav-cart:hover {
+    color: darkred;
+    cursor: pointer;
 }
 
 /*main*/
@@ -360,9 +398,6 @@
     justify-content: space-between;
 }
 .product-1 {
-}
-.product:last-child {
-    padding-right: 0;
 }
 .best-groods_style {
     font-family: 'Poiret One', cursive;
@@ -570,6 +605,10 @@
         line-height: 19px;
         padding-top: 30px;
     }
+    .descr {
+        font-size: 14px;
+        text-align: left;
+    }
     .product-price {
         padding: 6px 0 8px 0;
     }
@@ -579,6 +618,9 @@
     .footer {
         flex-direction: column;
         align-items: center;
+    }
+    .footer {
+        padding-top: 24px;
     }
     .footer-form {
         max-width: 282px;
@@ -592,6 +634,7 @@
     }
     .footer-hite-text {
         max-width: 278px;
+        text-align: center;
     }
     .footer-hite_icons img {
         padding-right: 23px;
@@ -609,5 +652,51 @@
     }
     .header {
         display: none;
+    }
+
+    .footer-hite_title {
+        text-align: center;
+    }
+    .product-agreement {
+        padding-top: 10px;
+        padding-left: 0;
+    }
+    .product-link {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_nav-menu-1 {
+        text-align: center;
+        margin: 22px 0 26px 0;
+    }
+    .footer_nav-menu-list {
+        text-align: center;
+    }
+    .footer_nav-extra-menu-1 {
+        text-align: center;
+        margin: 22px 0 26px 0;
+    }
+    .footer_nav-extra-menu-list {
+        text-align: center;
+    }
+    .subscribe {
+        text-align: center;
+        margin: 22px 0 26px 0;
+    }
+    .product-1 img {
+        max-width: 131px;
+        max-height: 151px;
+    }
+    .product-1_price {
+        font-size: 20px;
+    }
+    .product-1_title {
+        font-size: 20px;
+    }
+    .product-1 {
+        padding-bottom: 20px;
+    }
+    .product-description {
+        padding: 0;
     }
 }
