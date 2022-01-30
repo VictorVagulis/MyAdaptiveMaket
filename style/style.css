@@ -372,7 +372,7 @@
 }
 .characteristics {
     font-family: "Open Sans Condenced Light", sans-serif;
-    color: #4E6D7D;
+    color: #9BC4DA;
     font-size: 28px;
     padding-right: 57px;
     background-color: white;
@@ -386,7 +386,7 @@
     border: solid 0;
 }
 .characteristics:hover {
-    color: #9BC4DA;
+    color: #4E6D7D;
     cursor: pointer;
 }
 .characteristics-reviews {
@@ -800,6 +800,9 @@
 .descr {
     display: none;
 }
-.descr.is-active {
+.descr.active {
     display: block;
+}
+.active {
+    color: #4E6D7D;
 }
