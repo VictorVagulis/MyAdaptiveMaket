@@ -1,30 +1,34 @@
+//modalWindow
+
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("product-button");
-let span = document.getElementsByClassName("close")[0];
-let button = document.getElementsByClassName( "btnCancelOk")[0];
-let button2 = document.getElementsByClassName("btnCancelOk-1")[0];
+let span = document.querySelector(".close");
+let button = document.querySelector( ".btnCancelOk");
+let button2 = document.querySelector(".btnCancelOk-1");
 
 btn.onclick = function() {
     modal.style.display = "block";
 }
-button.onclick = function () {
+const close = () => {
     modal.style.display = "none";
 }
-button2.onclick = function () {
-    modal.style.display = "none";
-}
-span.onclick = function() {
-    modal.style.display = "none";
-}
-window.onclick = function(event) {
+button.onclick = close
+button2.onclick = close
+span.onclick = close
+document.body.onclick = function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
     }
 }
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') { span.onclick()
+document.body.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        span.onclick()
     }
 });
+
+
+//accordion
+
 
 const tab = document.querySelectorAll(".characteristics");
 const tCont = document.querySelectorAll(".descr");
@@ -49,3 +53,7 @@ tab.forEach(function (item) {
          }
      });
 });
+
+
+//slideShow
+
