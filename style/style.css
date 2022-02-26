@@ -397,8 +397,11 @@
 }
 .best-groods_products {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-between;
+    /*overflow: hidden;*/
+    max-height: 412px;
+    transition: .2s;
 }
 .product-1 {
 }
@@ -805,4 +808,30 @@
 }
 .active {
     color: #4E6D7D;
+}
+
+/*slider*/
+
+.slider-product-btn {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-all {
+    border: none;
+    background-color: white;
+    font-size: 36px;
+    font-family: "Open Sans Condenced Light", sans-serif;
+    color: #344854;
+}
+.btn-next:hover {
+    color: #9BC4DA;
+    cursor: pointer;
+}
+.btn-prev:hover {
+    color: #9BC4DA;
+    cursor: pointer;
+}
+.product-slider {
+    overflow: hidden;
 }
