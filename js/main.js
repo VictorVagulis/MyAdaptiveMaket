@@ -1,10 +1,10 @@
 //modalWindow
 
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("product-button");
-let span = document.querySelector(".close");
-let button = document.querySelector( ".btnCancelOk");
-let button2 = document.querySelector(".btnCancelOk-1");
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("product-button");
+const span = document.querySelector(".close");
+const button = document.querySelector( ".btn-cancel");
+const button2 = document.querySelector(".btn-ok");
 
 btn.onclick = function() {
     modal.style.display = "block";
@@ -35,11 +35,11 @@ const tCont = document.querySelectorAll(".descr");
 
 tab.forEach(function (item) {
      item.addEventListener("click", function () {
-         let currentBtn = item;
-         let tabCont = currentBtn.getAttribute("data_tab");
-         let cont = document.querySelector(tabCont);
+         const currentBtn = item;
+         const tabCont = currentBtn.getAttribute("data-tab");
+         const cont = document.querySelector(tabCont);
 
-         if ( ! currentBtn.classList.contains('active')){
+         if (! currentBtn.classList.contains('active')){
 
          tab.forEach(function (item) {
             item.classList.remove('active');
@@ -64,7 +64,7 @@ const container = document.querySelector(".product-slider");
 const track = document.querySelector(".best-groods_products");
 const btnPrev = document.querySelector(".btn-prev");
 const btnNext = document.querySelector(".btn-next");
-const items = document.querySelectorAll(".product-1");
+const items = document.querySelectorAll(".product-cell");
 const itemsCount = items.length;
 const itemWidth = container.clientWidth / slidesToShow;
 const movePosition = slidesToScroll * itemWidth;
@@ -108,4 +108,14 @@ const btnNextDis = () => {
         btnPrev.classList.add('btn-prev');
     }
 };
+
+
+//other
+
+
+
+
+
+
+                                                                    
 

@@ -15,9 +15,9 @@
         </div>
         <div class="header_nav">
             <ul class="header_nav-element-2">
-                <li class="header_nav-element-2.1">Главная</li>
-                <li class="header_nav-element-2.1">Магазин</li>
-                <li class="header_nav-element-2.1">О нас</li>
+                <li class="header_nav-element-2-title">Главная</li>
+                <li class="header_nav-element-2-title">Магазин</li>
+                <li class="header_nav-element-2-title">О нас</li>
             </ul>
         </div>
         <div class="header_nav">
@@ -34,16 +34,16 @@
             <div class="mobi-menu-list">
                 <ul class="mobi-menu-column">
                     <li class="mobi-menu-list-title">Главная</li>
-                    <li class="mobi-menu-list-title-1">Магазин</li>
+                    <li class="mobi-menu-list-title-shop">Магазин</li>
                     <li class="mobi-menu-list-title">О нас</li>
                 </ul>
             </div>
         </div>
         <div class="mobi-header_nav-element-hite">
-            <h2 class="mobi-header_nav-element">hite</h2>
+            <h2 class="mobi-header_nav-element-title">hite</h2>
         </div>
         <div class="mobi-header_nav-icons">
-            <ul class="mobi-header_nav-element-1">
+            <ul class="mobi-header_nav-element">
                 <li class="mobi-header_nav-search"><i class="fa fa-search" aria-hidden="true"></i></li>
                 <li class="mobi-header_nav-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
             </ul>
@@ -52,7 +52,7 @@
 
     </div>
     <main class="product">
-        <section class="product-foto">
+        <section class="product-photo">
             <img src="images/backgtoung.png" alt="">
             <div class="product-star">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -62,22 +62,22 @@
                 <i class="fa fa-star" aria-hidden="true"></i>
             </div>
         </section>
-        <div class="product-foto-dectription">
-            <div class="product-foto-small">
-                <div class="product-foto-small-1">
-                    <span class="product-foto-small-3"><img src="images/product-foto-1.png" alt=""></span>
-                    <img src="images/product-foto-2.png" alt="">
+        <div class="product-photo-dectription">
+            <div class="product-photo-small">
+                <div class="product-photo-small-top">
+                    <span class="product-photo-small-left"><img src="images/product-photo-first-angle.png" alt=""></span>
+                    <img src="images/product-photo-second-angle.png" alt="">
                 </div>
-                <div class="product-foto-small-2">
-                    <span class="product-foto-small-4"><img src="images/product-foto-3.png" alt=""></span>
-                    <img src="images/product-foto-4.png" alt="">
+                <div class="product-photo-small-bottom">
+                    <span class="product-photo-small-left-bottom"><img src="images/product-photo-third-angle.png" alt=""></span>
+                    <img src="images/product-photo-fourth-angle.png" alt="">
                 </div>
             </div>
             <div class="product-description">
                 <div class="product-name-price-btn">
                     <div class="product_name-price">
                         <p class="product-name">Чёрная лампа</p>
-                        <p class="product-price">$545</p>
+                        <p class="product-price-tag">$545</p>
                     </div>
                     <div class="product-btn">
                         <button id="product-button"><p class="text-btn">Купить</p></button>
@@ -86,8 +86,8 @@
                                 <span class="close">&times;</span>
                                 <p class="close-text">Добавить в корзину?</p>
                                 <div class="confirm-btn">
-                                    <button class="btnCancelOk"><p class="btn-cancel-ok-text">Отмена</p></button>
-                                    <button class="btnCancelOk-1"><p class="btn-cancel-ok-text">Ок</p></button>
+                                    <button class="btn-cancel"><p class="btn-cancel-ok-text">Отмена</p></button>
+                                    <button class="btn-ok"><p class="btn-cancel-ok-text">Ок</p></button>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +106,8 @@
         </div>
         <div class="product-characteristics">
             <div class="characteristics-reviews">
-                <button class="characteristics active" data_tab="#tab-1">Характеристики</button>
-                <button class="characteristics" data_tab="#tab-2">Отзывы</button>
+                <button class="characteristics active" data-tab="#tab-1">Характеристики</button>
+                <button class="characteristics" data-tab="#tab-2">Отзывы</button>
             </div>
             <div class="descr-block">
                 <div class="descr active" id="tab-1">Для современного мира курс на социально-ориентированный
@@ -126,47 +126,47 @@
                 <p class="best-groods_style">Лучшие товары</p>
             </div>
             <div class="cover-slider">
-            <div class="product-slider">
-                <div class="best-groods_products">
-                    <div class="product-1">
-                        <img src="images/best-groods-1.png" alt="">
-                        <p class="product-1_title">Чёрная лампа</p>
-                        <p class="product-1_price">$512</p>
+                <div class="product-slider">
+                    <div class="best-groods_products">
+                        <div class="product-cell">
+                            <img src="images/best-groods-black-lamp.png" alt="">
+                            <p class="product-title">Чёрная лампа</p>
+                            <p class="product-price">$512</p>
+                        </div>
+                        <div class="product-cell">
+                            <img src="images/best-groods-white-table.png" alt="">
+                            <p class="product-title">Стол</p>
+                            <p class="product-price">$367</p>
+                        </div>
+                        <div class="product-cell product-three">
+                            <img src="images/best-groods-white-chair.png" alt="">
+                            <p class="product-title">Деревянный стул</p>
+                            <p class="product-price">$586</p>
+                        </div>
+                        <div class="product-cell product-two">
+                        <img src="images/best-groods-wooden-chair.png" alt="">
+                        <p class="product-title">Стул Софт</p>
+                        <p class="product-price">$958</p>
                     </div>
-                    <div class="product-1">
-                        <img src="images/best-groods-2.png" alt="">
-                        <p class="product-1_title">Стол</p>
-                        <p class="product-1_price">$367</p>
+                        <div class="product-cell">
+                        <img src="images/best-groods-black-lamp.png" alt="">
+                        <p class="product-title">Чёрная лампа</p>
+                        <p class="product-price">$512</p>
                     </div>
-                    <div class="product-1 product-3">
-                        <img src="images/best-groods-3.png" alt="">
-                        <p class="product-1_title">Деревянный стул</p>
-                        <p class="product-1_price">$586</p>
+                        <div class="product-cell">
+                        <img src="images/best-groods-white-table.png" alt="">
+                        <p class="product-title">Стол</p>
+                        <p class="product-price">$367</p>
                     </div>
-                    <div class="product-1 product-2">
-                        <img src="images/best-groods-4.png" alt="">
-                        <p class="product-1_title">Стул Софт</p>
-                        <p class="product-1_price">$958</p>
+                        <div class="product-cell product-three">
+                        <img src="images/best-groods-white-chair.png" alt="">
+                        <p class="product-title">Деревянный стул</p>
+                        <p class="product-price">$586</p>
                     </div>
-                    <div class="product-1">
-                        <img src="images/best-groods-1.png" alt="">
-                        <p class="product-1_title">Чёрная лампа</p>
-                        <p class="product-1_price">$512</p>
-                    </div>
-                    <div class="product-1">
-                        <img src="images/best-groods-2.png" alt="">
-                        <p class="product-1_title">Стол</p>
-                        <p class="product-1_price">$367</p>
-                    </div>
-                    <div class="product-1 product-3">
-                        <img src="images/best-groods-3.png" alt="">
-                        <p class="product-1_title">Деревянный стул</p>
-                        <p class="product-1_price">$586</p>
-                    </div>
-                    <div class="product-1 product-2">
-                        <img src="images/best-groods-4.png" alt="">
-                        <p class="product-1_title">Стул Софт</p>
-                        <p class="product-1_price">$958</p>
+                        <div class="product-cell product-two">
+                        <img src="images/best-groods-wooden-chair.png" alt="">
+                        <p class="product-title">Стул Софт</p>
+                        <p class="product-price">$958</p>
                     </div>
                 </div>
              </div>
@@ -210,7 +210,7 @@
         </div>
         <div class="footer-form">
             <p class="subscribe">Подпишись на уведомеления о новых товарах</p>
-            <form type="get" action="form.php">
+            <form>
                 <input class="form-e-mail" type="text" id="e-mail-form" name="e-mail" placeholder="e-mail">
                 <button class="subscribe-btn">Подписаться</button>
             </form>
