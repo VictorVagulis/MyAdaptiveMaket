@@ -22,21 +22,24 @@
         </div>
         <div class="header_nav">
             <ul class="header_nav-element-3">
-                <li class="header_nav-heart"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
-                <li class="header_nav-search"><i class="fa fa-search" aria-hidden="true"></i></li>
-                <li class="header_nav-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                <li class="header_nav-cart header_nav-element header_nav-indent"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                <li class="header_nav-search header_nav-element header_nav-indent"><i class="fa fa-search" aria-hidden="true"></i></li>
+                <li class="header_nav-cart header_nav-element header_nav-indent"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
             </ul>
         </div>
     </header>
     <div class="mobi-header">
 
         <div class="burger">
-            <div class="mobi-menu-list">
-                <ul class="mobi-menu-column">
-                    <li class="mobi-menu-list-title">Главная</li>
-                    <li class="mobi-menu-list-title-shop">Магазин</li>
-                    <li class="mobi-menu-list-title">О нас</li>
-                </ul>
+            <div class="burger-close">
+                <p class="close-burger">&times;</p>
+                <div class="mobi-menu-list">
+                    <ul class="mobi-menu-column">
+                        <li class="mobi-menu-list-title mobi-header_nav">Главная</li>
+                        <li class="mobi-menu-list-title-shop mobi-header_nav">Магазин</li>
+                        <li class="mobi-menu-list-title mobi-header_nav">О нас</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="mobi-header_nav-element-hite">
@@ -44,8 +47,8 @@
         </div>
         <div class="mobi-header_nav-icons">
             <ul class="mobi-header_nav-element">
-                <li class="mobi-header_nav-search"><i class="fa fa-search" aria-hidden="true"></i></li>
-                <li class="mobi-header_nav-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                <li class="mobi-header_nav-search mobi-header_nav"><i class="fa fa-search" aria-hidden="true"></i></li>
+                <li class="mobi-header_nav-cart mobi-header_nav"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
             </ul>
         </div>
 
@@ -64,12 +67,12 @@
         </section>
         <div class="product-photo-dectription">
             <div class="product-photo-small">
-                <div class="product-photo-small-top">
-                    <span class="product-photo-small-left"><img src="images/product-photo-first-angle.png" alt=""></span>
+                <div class="product-photo-small-top product-photo-small-flex">
+                    <span class="product-photo-small-left product-photo-small-left-left-bottom"><img src="images/product-photo-first-angle.png" alt=""></span>
                     <img src="images/product-photo-second-angle.png" alt="">
                 </div>
-                <div class="product-photo-small-bottom">
-                    <span class="product-photo-small-left-bottom"><img src="images/product-photo-third-angle.png" alt=""></span>
+                <div class="product-photo-small-bottom product-photo-small-flex">
+                    <span class="product-photo-small-left-bottom product-photo-small-left-left-bottom"><img src="images/product-photo-third-angle.png" alt=""></span>
                     <img src="images/product-photo-fourth-angle.png" alt="">
                 </div>
             </div>
@@ -86,8 +89,8 @@
                                 <span class="close">&times;</span>
                                 <p class="close-text">Добавить в корзину?</p>
                                 <div class="confirm-btn">
-                                    <button class="btn-cancel"><p class="btn-cancel-ok-text">Отмена</p></button>
-                                    <button class="btn-ok"><p class="btn-cancel-ok-text">Ок</p></button>
+                                    <button class="btn-cancel btn-cancel-ok"><p class="btn-cancel-ok-text">Отмена</p></button>
+                                    <button class="btn-ok btn-cancel-ok"><p class="btn-cancel-ok-text">Ок</p></button>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +109,7 @@
         </div>
         <div class="product-characteristics">
             <div class="characteristics-reviews">
-                <button class="characteristics active" data-tab="#tab-1">Характеристики</button>
+                <button class="characteristics active tab-1" data-tab="#tab-1">Характеристики</button>
                 <button class="characteristics" data-tab="#tab-2">Отзывы</button>
             </div>
             <div class="descr-block">
@@ -179,9 +182,9 @@
     </main>
     <footer class="footer">
         <div class="footer-hite">
-            <p class="footer-hite_title">hite</p>
+            <p class="footer-hite_title registration center">hite</p>
             <div class="footer-hite-text_container">
-                <p class="footer-hite-text">Разнообразный опыт говорит , эксперимент проверки дальнейших
+                <p class="footer-hite-text registration">Разнообразный опыт говорит , эксперимент проверки дальнейших
                     направлений </p>
             </div>
             <div class="footer-hite_icons">
@@ -190,32 +193,32 @@
                 <img src="images/call.svg" alt="">
                 <img src="images/Instagram.svg" alt="">
             </div>
-            <p class="footer-copy">hite. com 2021 &copy;</p>
+            <p class="footer-copy registration">hite. com 2021 &copy;</p>
         </div>
-        <div class="footer_nav-menu">
-            <p class="footer_nav-menu-1">Меню</p>
-            <ul class="footer_nav-menu-list">
-                <li class="footer_nav-menu-list-title">Главная</li>
-                <li class="footer_nav-menu-list-title">Магазин</li>
-                <li class="footer_nav-menu-list-title">О нас</li>
+        <div class="footer_nav-menu left">
+            <p class="footer_nav-menu-1 registration coloring cent-marg">Меню</p>
+            <ul class="footer_nav-menu-list center">
+                <li class="footer_nav-menu-list-title registration coloring">Главная</li>
+                <li class="footer_nav-menu-list-title registration coloring">Магазин</li>
+                <li class="footer_nav-menu-list-title registration coloring">О нас</li>
             </ul>
         </div>
-        <div class="footer_nav-extra-menu">
-            <p class="footer_nav-extra-menu-1">Дополнительное меню</p>
-            <ul class="footer_nav-extra-menu-list">
-                <li class="footer_nav-extra-menu-list-title">Блог</li>
-                <li class="footer_nav-extra-menu-list-title">Оплата и Доставка</li>
-                <li class="footer_nav-extra-menu-list-title">Политика Конфиденциальности</li>
+        <div class="footer_nav-extra-menu left registration">
+            <p class="footer_nav-extra-menu-1 registration coloring cent-marg">Дополнительное меню</p>
+            <ul class="footer_nav-extra-menu-list center">
+                <li class="footer_nav-extra-menu-list-title registration coloring">Блог</li>
+                <li class="footer_nav-extra-menu-list-title registration coloring">Оплата и Доставка</li>
+                <li class="footer_nav-extra-menu-list-title registration coloring">Политика Конфиденциальности</li>
             </ul>
         </div>
-        <div class="footer-form">
-            <p class="subscribe">Подпишись на уведомеления о новых товарах</p>
+        <div class="footer-form left">
+            <p class="subscribe registration cent-marg">Подпишись на уведомеления о новых товарах</p>
             <form>
                 <input class="form-e-mail" type="text" id="e-mail-form" name="e-mail" placeholder="e-mail">
                 <button class="subscribe-btn">Подписаться</button>
             </form>
         </div>
-        <p class="footer-copy-2">hite. com 2021 &copy;</p>
+        <p class="footer-copy-2 registration">hite. com 2021 &copy;</p>
     </footer>
 </div>
 <script src="js/main.js"></script>
