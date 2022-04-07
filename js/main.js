@@ -59,18 +59,19 @@ tab.forEach(function (item) {
 
 
 //slideShow
-
-let position = 0;
-let slidesToShow = 4;
-const slidesToScroll = 1;
 const container = document.querySelector(".product-slider");
 const track = document.querySelector(".best-groods_products");
 const btnPrev = document.querySelector(".btn-prev");
 const btnNext = document.querySelector(".btn-next");
 const items = document.querySelectorAll(".product-cell");
 const itemsCount = items.length;
+let slidesToShow = 4;
+let slidesToScroll = 1;
 const itemWidth = container.clientWidth / slidesToShow;
 const movePosition = slidesToScroll * itemWidth;
+let position = 0;
+
+
 
 items.forEach((item) => {
     item.style.minWidth = `${itemWidth}px`;
@@ -112,23 +113,11 @@ const btnNextDis = () => {
     }
 };
 
+const burger = document.querySelector('.burger');
 
-//other
-
-// const burger = document.querySelector('.burger');
-// let burgerBef = document.querySelector('.burger::before');
-// let burgerAft = document.querySelector('.burger::after');
-// let burgerClose = document.querySelector('.burger-close');
-// burger.addEventListener('click', () => {
-//         burger.style.backgroundColor = "white";
-//         burgerClose.style.color  = "black"
-//     });
-// burgerBef.addEventListener('click', () => {
-//         burgerBef.style.backgroundColor = "white";
-//     });
-// burgerAft.addEventListener('click', () => {
-//         burgerAft.style.backgroundColor = "white";
-//     });
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active')
+})
 
 
 

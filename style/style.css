@@ -110,6 +110,16 @@
     background-color: #82B5D1;
     z-index: 502;
 }
+.burger.active {
+    background-color: #fff;
+}
+.burger.active:after{
+    transform: rotate(-45deg);
+    top: -5px;
+}
+.burger.active:before {
+    transform: rotate(45deg);
+}
 .burger:after, .burger:before {
     content: "";
     position: absolute;
@@ -152,10 +162,10 @@
     display: none;
 
 }
-.burger:hover .mobi-menu-list {
+.burger.active .mobi-menu-list {
     height: 100vh;
 }
-.burger:hover .mobi-menu-list ul {
+.burger.active .mobi-menu-list ul {
     display: flex;
 }
 .mobi-header_nav-element {
@@ -236,7 +246,7 @@
     flex-wrap: wrap;
     display: flex;
 }
-.product-photo-small-left-left-bottom {
+.product-padding {
     padding-right: 30px;
 }
 .product-btn {
@@ -502,17 +512,11 @@
 }
 }
 
-@media screen and (max-width: 921px) {
-    .best-groods_products {
-        justify-content: space-evenly;
-    }
-}
 @media screen and (max-width: 1307px) {
-    .product-photo-small-left-left-bottom {
+    .product-padding {
         padding: 0;
     }
 }
-
 @media screen and (max-width: 670px) {
     .product-photo-small {
         display: none;
@@ -568,32 +572,11 @@
         display: flex;
         flex-direction: column;
     }
-    .product-cell img {
-        max-width: 131px;
-        max-height: 151px;
-    }
-    .product-price {
-        font-size: 20px;
-    }
-    .product-title {
-        font-size: 20px;
-    }
-    .product-cell {
-        padding-bottom: 20px;
-    }
     .product-description {
         padding: 0;
     }
 }
-@media screen and (max-width: 1218px) {
-    .product-two {
-        padding-top: 15px
-    }
-}
 @media screen and (max-width: 921px) {
-    .product-three {
-        padding-top: 15px
-    }
     .confirm-btn {
         margin: 0 60px;
     }
@@ -640,6 +623,7 @@
         text-align: center;
     }
 }
+
 /*Modal-window*/
 
 .modal {
@@ -754,4 +738,41 @@
     color: darkred;
     text-decoration: none;
     cursor: pointer;
+}
+@media screen and (max-width: 1240px) {
+    .product-cell img {
+        width: 230px;
+    }
+}
+@media screen and (max-width: 976px) {
+    .product-cell img {
+        width: 190px;
+    }
+    .title-price {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 812px) {
+    .product-cell img {
+        width: 150px;
+    }
+    .title-price {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 655px) {
+    .product-cell img {
+        width: 110px;
+    }
+    .title-price {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 466px) {
+    .product-cell img {
+        width: 90px;
+    }
+    .title-price {
+        font-size: 12px;
+    }
 }
