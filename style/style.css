@@ -576,16 +576,6 @@
         padding: 0;
     }
 }
-@media screen and (max-width: 921px) {
-    .confirm-btn {
-        margin: 0 60px;
-    }
-}
-@media screen and (max-width: 450px) {
-    .confirm-btn {
-        margin: -20px;
-    }
-}
 @media screen and (max-width: 1050px) {
     .left {
         margin-left: 15px;
@@ -643,7 +633,7 @@
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 75%;
 }
 .close {
     color: #aaa;
@@ -665,7 +655,8 @@
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    margin: 0 230px;
+    margin: 0 auto;
+    max-width: 400px;
 }
 .btn-cancel-ok {
     background-color: #82B5D1;

@@ -117,6 +117,10 @@ const burger = document.querySelector('.burger');
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active')
+    if (burger.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else
+        document.body.style.overflow = 'visible';
 })
 
 
